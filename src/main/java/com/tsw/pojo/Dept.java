@@ -2,12 +2,12 @@ package com.tsw.pojo;
 
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class Dept {
     private Integer id;
     private String name;
-    private Date createTime;
-    private Date updateTime;
+    private LocalDateTime createTime;
+    private LocalDateTime updateTime;
 }
