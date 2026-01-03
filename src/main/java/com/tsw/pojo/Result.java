@@ -23,7 +23,7 @@ public class Result {
     }
     public static Result error(String message) {
         Result result = new Result();
-        result.code = 500;
+        result.code = 0;
         result.message = message;
         return result;
     }
