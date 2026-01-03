@@ -1,3 +1,13 @@
 spring:
   application:
     name: tlias-admin
+  profiles:
+    default: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: ${tlias.datasource.url}
+    username: ${tlias.datasource.username}
+    password: ${tlias.datasource.password}
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
